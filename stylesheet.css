@@ -21,9 +21,10 @@ body {
 
   a {
     color: #ec85f6;
-    display: inline-block;
+    display: block;
     align-items: center;
     padding-bottom: 2%;
+    text-align: center;
   }
 
   a:hover {
