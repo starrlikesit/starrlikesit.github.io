@@ -10,12 +10,48 @@
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-      <h1>in progress!!</h1>
+      <h1>extras</h1>
 
-     
+      <div class="normal">
+        <h2>xdinary heroes</h2>
+        <button type="button" class="collapsible">click for content</button>
+            <div class="content">
+              <ul>
+                <li><a href="items/other covers/jingle bell rock.mp3" download>jingle bell rock - cover</a></li>
+                <li><a href="items/other covers/welcome to the black parade - cover.mp3" download>welcome to the black parade - cover</a></li>
+              </ul>
+            </div>
+      </div> 
+
+      <div class="normal">
+        <h2>others</h2>
+        <button type="button" class="collapsible">click for content</button>
+            <div class="content">
+              <ul>
+                <li><a href="items/other covers/all i want for christmas is you.mp3" download>all i want for xmas is u (sbs gayo)</a></li>
+              </ul>
+            </div>
+      </div> 
 
       <footer class="a">this website was made by me!!</footer>
 
       
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+
     </body>
 </html>
