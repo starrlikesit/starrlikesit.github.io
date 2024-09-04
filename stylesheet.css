@@ -30,8 +30,14 @@ body {
     color:rgb(127, 81, 243);
   }
 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
   .normal{
-    border-style: dashed;
+    border-style:double;
     border-color: aliceblue;
     width: 45%;
     margin: auto;
