@@ -10,12 +10,57 @@
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-      <h1>in progress!!</h1>
+      <h1>ateez</h1>
 
-     
+      <a href="index.html">home</a>
+
+      <div class="normal">
+        <h2>ateez covers</h2>
+        <button type="button" class="collapsible">click for content</button>
+            <div class="content">
+              <ul>
+                <li><a href="items/atz covers/as i told you.mp3" download>as i told you</a></li>
+                <li><a href="items/atz covers/sherlock.mp3" download>sherlock</a></li>
+                <li><a href="items/other covers/wolf.mp3" download>wolf</a></li>
+                <li><a href="items/atz covers/angel baby.mp3" download>angel baby</a></li>
+                <li><a href="items/atz covers/fantastic baby + nilli mambo.mp3" download>fantastic baby/nilli mambo</a></li>
+                <li><a href="items/atz covers/growl.mp3" download>growl</a></li>
+                <li><a href="items/atz covers/i need u.mp3" download>i need u</a></li>
+              </ul>
+            </div>
+      </div> 
+
+      <div class="normal">
+        <h2>ateez solo songs</h2>
+        <button type="button" class="collapsible">click for content</button>
+            <div class="content">
+              <ul>
+                <li><a href="items/other atz/tunnel (mingi).mp3" download>tunnel</a></li>
+                <li><a href="items/other atz/untitled (mingi).mp3" download>untitled</a></li>
+                <li><a href="items/other atz/why do you love (hongjoong).mp3" download>why do you love</a></li>
+              </ul>
+            </div>
+      </div> 
 
       <footer class="a">this website was made by me!!</footer>
 
       
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+
     </body>
 </html>
