@@ -10,12 +10,54 @@
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-      <h1>in progress!!</h1>
+      <h1>tomorrow x together</h1>
 
-     
+      <a href="index.html">home</a>
+
+      <div class="normal">
+        <h2>txt covers</h2>
+        <button type="button" class="collapsible">click for content</button>
+            <div class="content">
+              <ul>
+                <li><a href="items/txt covers + extras/3D.mp3" download>3D</a></li>
+                <li><a href="items/txt covers + extras/guilty.mp3" download>guilty</a></li>
+                <li><a href="items/txt covers + extras/replay.mp3" download>replay</a></li>
+                <li><a href="items/txt covers + extras/sk8er boi.mp3" download>sk8er boi</a></li>
+              </ul>
+            </div>
+      </div> 
+
+      <div class="normal">
+        <h2>txt extras</h2>
+        <button type="button" class="collapsible">click for content</button>
+            <div class="content">
+              <ul>
+                <li><a href="items/txt covers + extras/blue hour (dance break ver).mp3" download>blue hour (dance break ver)</a></li>
+                <li><a href="items/txt covers + extras/happy falls (txt ver.).mp3" download>happy falls (txt ver)</a></li>
+              </ul>
+            </div>
+      </div> 
 
       <footer class="a">this website was made by me!!</footer>
 
       
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+
     </body>
 </html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+      <h1>itzy</h1>
+
+      <a href="index.html">home</a>
+
+      <div class="normal">
+        <h2>b-day track</h2>
+        <button type="button" class="collapsible">click for content</button>
+            <div class="content">
+              <ul>
+                <li><a href="items/itzy covers/fireworks (yeji).mp3" download>fireworks (yeji)</a></li>
+                <li><a href="items/itzy covers/keep me waiting (lia).mp3" download>keep me waiting (lia)</a></li>
+                <li><a href="items/itzy covers/every second (ryujin).mp3" download>every second (ryujin)</a></li>
+                <li><a href="items/itzy covers/blueming (chaeryeong).mp3" download>blueming (chaeryeong)</a></li>
+                <li><a href="items/itzy covers/perfect to me (yuna).mp3" download>perfect to me (yuna)</a></li>
+              </ul>
+            </div>
+      </div> 
+
+      <div class="normal">
+        <h2>#cover it</h2>
+        <button type="button" class="collapsible">click for content</button>
+            <div class="content">
+              <ul>
+                <li><a href="items/itzy covers/cruel summer (yeji).mp3" download>cruel summer (yeji)</a></li>
+                <li><a href="items/itzy covers/lemon (ryujin).mp3" download>lemon (ryujin)</a></li>
+                <li><a href="items/itzy covers/와르르♥ (chaeryeong).mp3" download>와르르♥ (chaeryeong)</a></li>
+                <li><a href="items/itzy covers/espresso (yuna).mp3" download>espresso (yuna)</a></li>
+              </ul>
+            </div>
+      </div> 
+
+      <div class="normal">
+        <h2>other covers</h2>
+        <button type="button" class="collapsible">click for content</button>
+            <div class="content">
+              <ul>
+                <li><a href="items/itzy covers/bad girl good girl.mp3" download>bad girl good girl</a></li>
+                <li><a href="items/other covers/u-go-girl.mp3" download>u-go-girl (yuna)</a></li>
+              </ul>
+            </div>
+      </div> 
+
+      <footer class="a">this website was made by me!!</footer>
+
+
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+      
+    </body>
+</html>
