@@ -1,5 +1,5 @@
 body {
-    background-color: #191b34;
+    background-image: url("items/background\ 2.0.png");
     font-family: 'Courier New', Courier, monospace;
   }
 
@@ -43,7 +43,8 @@ body {
     width: 45%;
     margin: auto;
     text-align: center;
-    margin-bottom: 1%
+    margin-bottom: 1%;
+    background-color: #191b348b;
  }
 
  .collapsible {
@@ -68,7 +69,7 @@ body {
     padding: 0 1%;
     display: none;
     overflow: hidden;
-    background-color: #191b34;
+    background-color: #191b348b;
   }
 
  footer {
